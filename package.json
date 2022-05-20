@@ -1,0 +1,26 @@
+{
+  "name": "inputwebsitetest",
+  "version": "1.0.0",
+  "description": "Host a website with multiple input fields to test automating data into said input fields",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BrendanRahn/InputWebsiteTest.git"
+  },
+  "author": "Brendan Rahn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BrendanRahn/InputWebsiteTest/issues"
+  },
+  "homepage": "https://github.com/BrendanRahn/InputWebsiteTest#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "4.17.1"
+    
+  }
+
+}
