@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="loginPageStyle.css">
+    </head>
+
+    <body>
+        <div id="loginWindow" class="loginWindow">
+            <div id = loginWindowTitleDiv> 
+                <p>Enter login information</p>
+            </div>
+
+            <form id="loginForm" class="loginForm" onsubmit="handleLogin();return false">
+
+                <div id="invalidLoginDiv" class="messageDisplay" style="display: none">
+                    <p>Error: username or password is incorrect</p>
+                </div>
+
+                <div id="usernameDiv" class="inputFieldDiv">
+                    <label for="usernameInputField" class="inputFieldLabel">Enter username</label>
+                    <input id="usernameInputField" class="inputField" type="text">
+                </div>
+
+                <div id="passwordDiv" class="inputFieldDiv">
+                    <label for="passwordInputDiv" class="inputFieldLabel">Enter password</label>
+                    <input id="passwordInputField" class="inputField" type="password">
+                </div>
+
+
+                <input type="submit">
+            </form>
+
+        </div>
+
+    </body>
+
+    <script src="./scripts.js"></script>
+
+
+
+
+</html>

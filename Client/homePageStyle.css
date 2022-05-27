@@ -1,0 +1,26 @@
+body {
+    background-color: plum;
+}
+
+.logoDiv {
+    position: relative;
+    background-image: url("logoImage.jpg");
+    background-size: cover;
+    border: 5px solid black;
+    width: 300px;
+    height: 100px;
+}
+
+.inputField {
+    display: block; 
+    border: 3px solid black;
+}
+
+.inputFieldLabel {
+    display: block;
+}
+
+.inputFieldDiv {
+    padding-top: 20px;
+    padding-bottom:20px;
+}
