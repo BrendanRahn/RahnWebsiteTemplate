@@ -1,6 +1,7 @@
 const path = require('path');
 const ClientFolderPath = path.resolve('./Client');
 const {validateLogin} = require('./src/controllers/loginController')
+const homeController = require('./src/controllers/homeController');
 
 function initRoutes (app) {
 
@@ -28,7 +29,11 @@ function initRoutes (app) {
         .route('/home')
         .get((req, res) => {
             res.sendFile(path.join(ClientFolderPath, 'homePage.html'))
-        });
+        })
+        .post((req, res) => {
+            let testUserInfo = homeController.retreiveUserInfo();
+            res.status(200).send(testUserInfo)
+        })
 
     app
         .route('/')

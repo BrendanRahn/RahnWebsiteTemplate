@@ -39,3 +39,8 @@ function loginDataEncrypt (loginData) {
     return(loginData);
 
 }
+
+function formSubmissionSuccess() {
+
+    console.log("form submitted :)")
+}
