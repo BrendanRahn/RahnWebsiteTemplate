@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <head>
-    <link rel="stylesheet" href="homePageStyle.css">
+    <link rel="stylesheet" href="/static/homePageStyle.css">
 </head>
 
 <body>
 
 
-        <form id="userInfoForm" onsubmit="formSubmissionSuccess();return false">
+        <form id="userInfoForm" action="/home" method="post">
             <div id="topRightLogo" class="logoDiv"></div>
 
             <div id="nameDiv" class="inputFieldDiv">
@@ -27,7 +27,7 @@
 
 </body>
 
-<script src="./scripts.js"></script>
+<script src="/static/scripts.js"></script>
 
 
 </html>

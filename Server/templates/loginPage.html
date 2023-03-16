@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="loginPageStyle.css">
+        <link rel="stylesheet" href="/static/loginPageStyle.css">
     </head>
 
     <body>
@@ -10,7 +10,7 @@
                 <p>Enter login information</p>
             </div>
 
-            <form id="loginForm" class="loginForm" onsubmit="handleLogin();return false">
+            <form id="loginForm" class="loginForm" action="/login" method="post">
 
                 <div id="invalidLoginDiv" class="messageDisplay" style="display: none">
                     <p>Error: username or password is incorrect</p>
@@ -34,7 +34,7 @@
 
     </body>
 
-    <script src="./scripts.js"></script>
+    <script src="/static/scripts.js"></script>
 
 
 

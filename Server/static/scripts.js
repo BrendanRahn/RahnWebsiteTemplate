@@ -9,18 +9,19 @@ function handleLogin() {
 
 
     console.log(encryptedData);
-    fetch('/login', {
+    fetch('/login/', {
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify(encryptedData)
     })
+    
     .then((res) => {
         return res.json(res)
     })
     //explain what this handles
     .then((resData) => { 
         if (resData.message == 'valid-login') {
-            window.location.href = 'http://localhost:3002/home'
+            window.location.href = 'http://localhost:5000/'
         } else if (resData.message == 'invalid-login') {
             document.getElementById('invalidLoginDiv').style.display = 'block';
             
