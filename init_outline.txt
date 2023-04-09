@@ -1,0 +1,14 @@
+
+
+if set pythonpath == true (create pythonpath)
+    else (create)
+
+#creates and adds cd
+:create pythonpath
+    setx PYTHONPATH = %cd%
+
+
+#appends cd to existing pythonpath, checks if exists or not
+:append to pythonpath
+    if dir !in pythonpath (__add path__)
+        else (end)

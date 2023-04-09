@@ -33,7 +33,7 @@ p {
     padding-bottom: 40px;
 }
 
-.loginWindow {
+.loginWindowDiv {
     height: 400px;
     width: 300px;
     background-color: blue;
