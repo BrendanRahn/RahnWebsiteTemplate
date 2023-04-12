@@ -1,15 +1,17 @@
 import pytest
 import flask
+from Server.create_app import create_app
 from Server.blueprints.webpage_blueprint import webpage_blueprint
 
 
 @pytest.fixture()
 def app():
-    app = flask.Flask(__name__)
-    app.register_blueprint(webpage_blueprint)
+    app = create_app()
     app.config.update({"TESTING": True})
 
     yield app
+
+
 
 @pytest.fixture()
 def client(app):

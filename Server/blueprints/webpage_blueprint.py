@@ -1,7 +1,7 @@
 import flask
 from flask import Blueprint
 
-webpage_blueprint = Blueprint("ex_blueprint", __name__, template_folder="templates")
+webpage_blueprint = Blueprint("webpage_blueprint", __name__, template_folder="templates")
 
 
 
